@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 25.140414861748852
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 746.90216833958254,
+            "y": 585.62652438794544
+          },
+          "nodeIndex": "BaseP",
+          "nodeLineageTag": "afa19e82-26f3-41c2-9537-c433359e65e0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 406.15003134361274,
+            "y": 592.4510058107594
+          },
+          "nodeIndex": "BaseOn",
+          "nodeLineageTag": "81d874cc-0884-4c53-83c5-9a09e5f614c4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "BOX",
+          "nodeLineageTag": "417284ba-f441-4309-aade-49b538e33980",
+          "size": {
+            "height": 233.5,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 17.571275928859308,
+            "y": 585.83073569265946
+          },
+          "nodeIndex": "Media",
+          "nodeLineageTag": "ced8cbe6-bcd0-4f83-bf1a-8e56e3238049",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 837.48290403224189,
+            "y": 152.41376509935242
+          },
+          "nodeIndex": "Corte",
+          "nodeLineageTag": "c1d919fa-9140-4a0e-99b3-400071b9073a",
+          "size": {
+            "height": 225.75,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 371.6683525274193,
+            "y": 0
+          },
+          "nodeIndex": "Demanda",
+          "nodeLineageTag": "1e9e477f-287e-490e-b00f-f75aad05f904",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1121.482904032242,
+            "y": 322.2255029053797
+          },
+          "nodeIndex": "Carteira_Pesados",
+          "nodeLineageTag": "17797cd2-1c20-4f7f-8066-ea9a8da08336",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 63.642545630159844,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Status de Pedidos 1200"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9e0e8e65-ec48-49a9-ba9a-babbb39b8767"
+  }
+}
