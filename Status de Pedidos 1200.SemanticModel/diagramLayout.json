@@ -98,6 +98,19 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1405.482904032242,
+            "y": 394.2255029053797
+          },
+          "nodeIndex": "hora",
+          "nodeLineageTag": "b8efe3ba-882e-404a-a07c-0d5b403b4c9f",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",

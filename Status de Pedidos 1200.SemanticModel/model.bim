@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Carteira_Pesados\",\"BaseP\",\"Arquivo de Amostra (2)\",\"Parâmetro2\",\"Transformar o Arquivo de Exemplo (2)\",\"Transformar Arquivo (2)\",\"BaseOn\",\"Arquivo de Amostra (3)\",\"Parâmetro3\",\"Transformar o Arquivo de Exemplo (3)\",\"Transformar Arquivo (3)\",\"Corte\",\"Parâmetro4\",\"Transformar o Arquivo de Exemplo\",\"Arquivo de Amostra (4)\",\"Transformar Arquivo (4)\",\"BOX\",\"Parâmetro5\",\"Transformar o Arquivo de Exemplo (4)\",\"Arquivo de Amostra (5)\",\"Transformar Arquivo (5)\",\"Demanda\",\"Arquivo de Amostra\",\"Parâmetro1\",\"Transformar o Arquivo de Exemplo (5)\",\"Transformar Arquivo\"]"
+        "value": "[\"Carteira_Pesados\",\"BaseP\",\"Arquivo de Amostra (2)\",\"Parâmetro2\",\"Transformar o Arquivo de Exemplo (2)\",\"Transformar Arquivo (2)\",\"BaseOn\",\"Arquivo de Amostra (3)\",\"Parâmetro3\",\"Transformar o Arquivo de Exemplo (3)\",\"Transformar Arquivo (3)\",\"Corte\",\"Parâmetro4\",\"Transformar o Arquivo de Exemplo\",\"Arquivo de Amostra (4)\",\"Transformar Arquivo (4)\",\"BOX\",\"Parâmetro5\",\"Transformar o Arquivo de Exemplo (4)\",\"Arquivo de Amostra (5)\",\"Transformar Arquivo (5)\",\"Demanda\",\"Arquivo de Amostra\",\"Parâmetro1\",\"Transformar o Arquivo de Exemplo (5)\",\"Transformar Arquivo\",\"hora\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -12678,6 +12678,22 @@
                   }
                 ]
               },
+              "demanda.teste": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Media",
+                    "ConceptualProperty": "teste"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "teste": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "demanda1": {
                 "Definition": {
                   "Binding": {
@@ -12799,6 +12815,45 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "hora": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "hora"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hora": {
+                      "State": "Generated",
+                      "Weight": 0.87
+                    }
+                  }
+                ]
+              },
+              "hora.hora": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "hora",
+                    "ConceptualProperty": "hora"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hora": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "time": {
+                      "State": "Generated",
+                      "Weight": 0.7
                     }
                   }
                 ]
@@ -22481,6 +22536,72 @@
                   }
                 },
                 "State": "Generated"
+              },
+              "demanda_has_teste": {
+                "Binding": {
+                  "ConceptualEntity": "Media"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "demanda.teste"
+                      },
+                      "Subject": {
+                        "Role": "demanda"
+                      }
+                    },
+                    "ID": "medias_have_teste",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "demanda": {
+                    "Target": {
+                      "Entity": "demanda"
+                    }
+                  },
+                  "demanda.teste": {
+                    "Target": {
+                      "Entity": "demanda.teste"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "hora_has_hora": {
+                "Binding": {
+                  "ConceptualEntity": "hora"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "hora.hora"
+                      },
+                      "Subject": {
+                        "Role": "hora"
+                      }
+                    },
+                    "ID": "horas_have_horas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "hora": {
+                    "Target": {
+                      "Entity": "hora"
+                    }
+                  },
+                  "hora.hora": {
+                    "Target": {
+                      "Entity": "hora.hora"
+                    }
+                  }
+                },
+                "State": "Generated"
               }
             },
             "Version": "3.5.0"
@@ -28548,6 +28669,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -29130,6 +29255,58 @@
           }
         ],
         "showAsVariationsOnly": true
+      },
+      {
+        "name": "hora",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "hora",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "89159db2-ae8b-4e15-8a4b-4c89a93778c3",
+            "sourceColumn": "hora",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b8efe3ba-882e-404a-a07c-0d5b403b4c9f",
+        "partitions": [
+          {
+            "name": "hora",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = DateTime.LocalNow() - #duration(0, 3, 0, 0),",
+                "    #\"Convertido para Tabela\" = #table(1, {{Fonte}}),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Convertido para Tabela\",{{\"Column1\", type time}}),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Tipo Alterado\",{{\"Column1\", \"hora\"}})",
+                "in",
+                "    #\"Colunas Renomeadas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
       }
     ]
   }
