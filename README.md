@@ -90,7 +90,7 @@ Vinícius Giovanni Pereira Barbosa</a>
 
 ## 🦸 Autor
 
-<a href="https://github.com/jonataalmeida-">
+<a href="https://github.com/jonataalmeida">
 Jonata de Almeida Rosa</a>
  <br />
  
